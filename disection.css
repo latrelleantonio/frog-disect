@@ -1,0 +1,254 @@
+* {
+    margin: 1px;
+    padding: 5px;
+}
+
+body {
+    background-color: #F9CEEE;
+}
+
+.header {
+    background-color: #F9F3EE;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px black;
+    font-size: 40px;
+    background-color: #CCF3EE;
+}
+.header h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px black;
+    font-size: 20px;
+    background-color: #97C4B8;
+}
+
+.head-title {
+    margin: 15px auto;
+    padding: 10px;
+    box-shadow: 10px 10px 10px grey;
+    background-color: pink;
+}
+
+.head-title h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.instructions {
+    display: inline;
+}
+
+/* left */
+.images {
+    margin-left: 390px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 20%;
+    float: inline-start;
+    cursor: pointer;
+}
+
+.images h3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: pink;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(70, 70, 70);
+}
+
+.images img {
+    margin: 10px auto;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(70, 70, 70);
+}
+
+/* Hide images by default */
+.images img {
+    display: none;
+}
+
+/* Add a class to show images when the collapsible is open */
+.images.open img {
+    display: block;
+    margin: 10px 0px;
+    width: 270%;
+}
+
+/* right */
+.act-sheet-guide {
+    margin-right: 390px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 30%;
+    float: inline-end;
+}
+
+.materials {
+    margin: 10px 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.materials h4 {
+    margin: auto;
+    padding: 10px;
+    background-color: pink;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(70, 70, 70);
+}
+
+.materials li {
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.materials li:hover {
+    transform: scale(1.2); 
+}
+
+/* Hide list items by default */
+.materials li {
+    display: none;
+}
+
+/* Add a class to show list items when the collapsible is open */
+.materials.open li {
+    display: block;
+    margin-top: 5px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* procedure */ 
+
+.procedure {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: pink;
+    margin-top: 10px;
+    float: inline;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.procedure h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: black;
+    text-shadow: 5px 5px 5px white;
+    margin: 10px 20px;
+}
+
+.procedure ol {
+    margin: 3px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px 2ox black;
+    font-weight: 600;
+    background-color: white;
+}
+
+/* video */ 
+
+.presentation {
+    margin: auto;
+}
+
+.video video {
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+@media only screen and (max-width:1563px) {
+    
+    .images {
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .act-sheet-guide {
+        margin-left: auto;
+        margin-right: 100px ;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    
+    .images {
+        width: 30%;
+    }
+
+    .act-sheet-guide {
+       width: 40%;
+    }
+
+}
+
+@media only screen and (max-width:412px) {
+    
+    .images {
+        margin-left: 5px;
+        width: 30%;
+    }
+    .images h3 {
+        font-size: 10px;
+    }
+
+    .act-sheet-guide {
+        margin-right: 5px ;
+        width: 60%;
+    }
+    .materials h4 {
+        font-size: 20px;
+    }
+
+}
